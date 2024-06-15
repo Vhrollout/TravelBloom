@@ -1,0 +1,110 @@
+body{
+    margin: 20px auto;
+    background-image: url(./Assets/bkg2.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root{
+    
+}
+
+/* Navbar */
+
+ul{
+    padding: 1rem;
+    text-align: center;
+}
+
+ul li{
+   list-style-type: none;
+   display: inline;
+   font-weight: bold;
+   padding: 0.8rem 0.4rem;
+   
+}
+
+a{
+    color: #272830;
+    text-decoration: none;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+.nav_logo{
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    margin: -1.1rem 0 6rem 2rem;
+}
+
+ul p{
+    display: inline;
+    float: left;
+    margin: 0 0 4rem 2rem;
+}
+
+/* search bar */
+
+input{
+    border-radius:  0.3rem 0 0 0.3rem ;
+    height: 1.5rem;
+    border: 2px solid #4c4f69;
+    margin-left: 2.5rem;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+ul button{
+        border-radius: 0 0.3rem 0.3rem 0;
+        height: 1.65rem;
+        cursor: pointer;
+        background-color: #4c4f69;
+        margin-left: -0.4rem;
+        border: none;
+}
+
+.vrline{
+    border-left: thick solid #b1b09c;
+    height: 150px;
+    margin-left: 3rem;
+    width: 0;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 5rem;
+    height: 12rem;
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+
+/* text */
+
+.text{
+    text-align: left;
+    width: 20rem;
+    min-height: 9rem;
+    position: relative;
+    color: #d9cece;
+    left: 6rem;
+}
+
+.text h1{
+    font-size: 2.5em;
+}
+
+.text h3{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+
