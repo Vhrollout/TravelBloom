@@ -3,7 +3,7 @@ let searchBtn = document.getElementById("searchBtn");
 let bookBtn = document.getElementById("bookBtn");
 let bookingDiv = document.getElementById("bookForm");
 let form = document.getElementsByTagName("form");
-let span = document.getElementById('spoon');
+let span = document.getElementById('span');
 let body = document.querySelector('body');
 let bookingData = []
 
@@ -32,29 +32,26 @@ function searchCities() {
         .then(response => response.json())
         .then(data => {
             const country = data.countries.find(item => item.name.toLowerCase() === input);
-            const spun = document.getElementById('spun');
             if (country) {
                 resultDiv.innerHTML = '';
+                const span = document.createElement("span");
+                span.innerHTML = `<i class="fa fa-close fa-2x" id="span"></i>`;
+                span.style.cssText = "float: right;"
+                resultDiv.appendChild(span);
+                span.addEventListener('click', function () {
+                    resultDiv.style.cssText = "display: none";
+                    resultDiv.innerHTML = '';
+                })
                 country.cities.forEach(city => {
                     const div = document.createElement('div');
                     div.innerHTML = `<div><h3>${city.name}</h3>
                                      <img src="${city.imageUrl}" alt="${city.name}">
                                      <figcaption>${city.description}</figcaption>
-                                     <p>${city.price}</p>
+                                     <p>${city.price}</br>${city.Days}</p>
                                      <button id="bookBtn" type="submit" onclick="bookingForm()">Book Now</button></div>`; // Display city details
                     //styling the content of resulting div
-                    div.cssText = 'width: 100%; height: auto'
-                    resultDiv.style.cssText = 'display:flex; overflow: hidden; color:white; justify-content: center; align-items: center;';
-                    const clearButton = document.createElement('button');
-                    clearButton.innerText = '✖️';
-                    clearButton.style.cssText = 'border-radius: 0.3rem; height: 2.25rem; position: relative; bottom: 15rem; right: 9rem;'; // Corrected style
-                    clearButton.addEventListener('click', () => {
-                        resultDiv.remove();
-                        // Remove the div when clicked
-                    });
-
-                    // Assuming 'div' is already created elsewhere in your code
-                    resultDiv.appendChild(clearButton);
+                    div.style.cssText = 'width: 100%; height: auto; box-sizing: border-box; padding: 1rem;';
+                    resultDiv.style.cssText = 'display:flex; overflow: hidden; justify-content: space-around; align-items: center; color: #1a2130; font-family: Lato, Arial';
                     resultDiv.appendChild(div);
 
                 });

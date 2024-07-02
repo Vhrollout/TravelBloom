@@ -12,7 +12,7 @@ body {
   --main: #1a2130;
   --style1: #83b4ff;
   --style2: #5a72a0;
-  --button: #fdffe2;
+  --button: #e2efff;
   --font1: Lato, sans-serif;
   --font2: "Playfair Display", serif;
   --font3: "Merriweather", serif;
@@ -142,7 +142,7 @@ input:focus {
   opacity: 0.7;
 }
 
-/*Main  text */
+                                              /*Main  text */
 
 .text {
   text-align: left;
@@ -191,18 +191,21 @@ input:focus {
   color: var(--main);
 }
 
-/* Booking Form */
+
+                                    /* Booking Form */
+
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
-form span {
+#bookForm i {
   position: relative;
-  left: 8.4rem;
-  bottom: 0.3rem;
-  z-index: 3;
+  left: 23.3rem;
+  bottom: 1.3rem;
+  z-index: 5;
   cursor: pointer;
+  color: var(--main);
 }
 
 .form-animation {
@@ -224,51 +227,72 @@ form button {
   height: 2.25rem;
   cursor: pointer;
   background-color: var(--style1);
-  margin-left: -0.2rem;
   border: none;
   color: var(--main);
-  margin-top: 1rem;
+  padding: 1rem;
 }
 
 form button:hover {
   background-color: var(--style2);
 }
 
-/* photo gallery */
+
+                                              /* photo gallery */
+
 
 #results {
   width: 100%;
   height: 100vh;
-  background: radial-gradient(#1d9b6f, #3a3a97, #1da45a);
+  background: radial-gradient(#5a72a0, #e2efff, #83b4ff);
   display: none;
   flex-direction: row;
-  gap: 2rem;
+  justify-content: space-around;
 }
 
 #results img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  border: 2px solid var(--main);
-  padding: 0.1rem;
+  padding: 1rem;
   border-radius: 0.3rem;
+  box-sizing: border-box;
 }
 
-#results span {
-  position: relative;
-  left: 8rem;
-  top: 4rem;
-}
-
-#result .div {
-  margin: 0 2rem;
-  padding: 0 2rem;
-}
 
 #results img:hover {
   transform: scale(1.03);
   transition: all 500ms;
 }
+
+#results button{
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--style1);
+  color: var(--button);
+  box-sizing: border-box;
+  padding: 0.3rem;
+  float: right;
+}
+
+#results button:hover{
+  background-color: #83b4ff;
+  cursor: pointer;
+  color: #1a2130;
+}
+
+#results span{
+  position: relative;
+  bottom: 17rem;
+  left: 70rem;
+  cursor: pointer;
+  color: var(--style2);
+}
+
+#results div figcaption, #results div p{
+  padding-left: 1rem;
+  line-height: 1.4rem;
+  margin-bottom: -1rem;
+}
+
 
 .blur {
   background-color: var(--style2);
@@ -303,7 +327,11 @@ form button:hover {
   transform: rotate(10deg) scale(1.2);
 }
 
-/* Contact Text */
+
+
+                                       /* Contact Text */
+
+
 
 .contact {
   width: 100%;
@@ -331,7 +359,7 @@ form button:hover {
 .form-animation {
   background-color: rgba(14, 20, 30, 0.4);
   width: 25rem;
-  height: 19rem;
+  height: 20rem;
   text-align: center;
   padding: 0.5rem;
   box-sizing: border-box;
@@ -377,7 +405,9 @@ form label {
   margin-top: 3rem;
 }
 
-/* About us */
+                                                 /* About us */
+
+
 .abMain {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -410,7 +440,8 @@ form label {
   padding: 0.3rem;
   float: right;
   justify-content: space-around;
-}   
+}
+
    .abMain aside{
     margin: 5rem 2rem 0 0;
    } 
