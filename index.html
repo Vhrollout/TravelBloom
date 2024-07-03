@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- OR for PNG format -->
+    <link
+      rel="icon"
+      href="./Assets/icons8-aircraft-color-32.png"
+      type="image/png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>Travel Bloom</title>
+  </head>
+
+
+  <body>
+
+    <div class="nav_div">
+      <div class="flex2">
+        <div>
+          <p>
+          Travel Bloom<i class="fa fa-plane fa-2x "></i>
+        </p>
+      </div>
+        <div>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="input_container">
+          <input
+            id="search"
+            type="text"
+            name="search"
+            placeholder="Search place or city..."
+          />
+          <div class="input-element">
+           <i class="fa fa-search"></i>
+          <button id="clear" class="clear" type="submit">Clear</button>
+          <button id="searchBtn" type="submit">Search</button>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- search element -->
+
+    <div id="results"></div>
+
+    <!-- verticle bar with social media icons -->
+
+
+    <div class="vrline">
+      <div class="text">
+        <h1>LIVE YOUR DREAMS</h1>
+        <h3>
+          The world is a book, and those who do not travel read only one page
+        </h3>
+        <button id="bookBtn" type="submit" onclick="bookingForm()">
+          Book Now
+        </button>
+      </div>
+    </div>
+
+
+    <!-- form element -->
+
+
+    <div class="form-animation" id="bookForm">
+      <i class="fa fa-close fa-2x" id="span"></i>
+      <form id="form" action="/">
+        <label class="label" for="name">Name</label>
+        <input
+          class="input"
+          type="text"
+          id="name"
+          name="name"
+          aria-required="true"
+          required
+        />
+
+        <label class="label" for="email">Email</label>
+        <input
+          class="input"
+          type="email"
+          id="email"
+          name="email"
+          aria-required="true"
+          required
+        />
+
+        <label class="label" for="contact">Contact No</label>
+        <input
+          class="input"
+          type="number"
+          id="contact"
+          name="contact"
+          aria-required="true"
+          required
+        />
+
+        <label class="label" for="password">password</label>
+        <input
+          class="input"
+          type="password"
+          id="password"
+          name="password"
+          aria-required="true"
+          required
+        />
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="icons">
+      <i class="fa fa-twitter fa-2x"></i>
+      <i class="fa fa-instagram fa-2x"></i>
+      <i class="fa fa-facebook fa-2x"></i>
+      <i class="fa fa-whatsapp fa-2x"></i>
+    </div>
+
+    <script src="./destination_paradise.js"></script>
+  </body>
+</html>

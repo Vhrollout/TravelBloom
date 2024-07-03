@@ -1,0 +1,149 @@
+{
+    "countries": [
+        {
+            "id": 1,
+            "name": "Australia",
+            "cities": [
+                {
+                    "name": "Melbourne, Australia",
+                    "imageUrl": "https://images.pexels.com/photos/4664660/pexels-photo-4664660.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": "A cultural hub famous for its art, food, and diverse neighborhoods.",
+                    "price": "$5200 per person",
+                    "Days": "4 Days 3 Nights"
+                },
+                {
+                    "name": "Sydney, Australia",
+                    "imageUrl": "https://images.pexels.com/photos/995765/pexels-photo-995765.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge.",
+                    "price": "$3400 per person",
+                    "Days": "5 Days 4 Nights"
+                },
+                {
+                    "name": "Brisbane, Australia",
+                    "imageUrl": "https://images.pexels.com/photos/2598750/pexels-photo-2598750.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": "Brisbane, with about 2.71 million residents, is the capital of Queensland. It offers a subtropical climate, beautiful river views, and a relaxed lifestyle1.",
+                     "price": "$1500 per person",
+                     "Days": "4 Days 3 Nights"
+                },
+                {
+                    "name": "Perth, Australia",
+                    "imageUrl": "https://images.pexels.com/photos/6761495/pexels-photo-6761495.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": "Located on the west coast, Perth has a population of approximately 2.31 million. It’s known for its stunning beaches, outdoor activities, and vibrant food scene1.",
+                    "price": "$1200 per person",
+                    "Days": "7 Days 8 Nights"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Japan",
+            "cities": [
+                {
+                    "name": "Tokyo, Japan",
+                    "imageUrl": "https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture.",
+                     "price": "$4200 per person",
+                     "Days": "9 Days 8 Nights"
+                },
+                {
+                    "name": "Kyoto, Japan",
+                    "imageUrl": "https://images.pexels.com/photos/2187605/pexels-photo-2187605.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": "Known for its historic temples, gardens, and traditional tea houses.",
+                     "price": "$2000 per person",
+                     "Days": "10 Days 9 Nights"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Brazil",
+            "cities": [
+                {
+                    "name": "Rio de Janeiro, Brazil",
+                    "imageUrl": "https://images.pexels.com/photos/2771080/pexels-photo-2771080.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks.",
+                     "price": "$6600 per person",
+                     "Days": "9 Days 8 Nights"
+                },
+                {
+                    "name": "São Paulo, Brazil",
+                    "imageUrl": "https://images.pexels.com/photos/1072839/pexels-photo-1072839.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": "The financial hub with diverse culture, arts, and a vibrant nightlife.",
+                     "price": "$6200 per person",
+                     "Days": "7 Days 6 Nights"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Austria",
+            "cities": [
+                {
+                    "name": "Linz",
+                    "imageUrl": "https://images.pexels.com/photos/12926571/pexels-photo-12926571.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": "Linz: The capital of Upper Austria, with a mix of modern and historic elements along the Danube River",
+                    "price": "$3400 per person",
+                    "Days": "5 Days 4 Nights"
+                },
+                {
+                    "name": "Vienna",
+                    "imageUrl": "https://images.pexels.com/photos/389865/pexels-photo-389865.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": " The capital of Austria, known for its rich history, classical music heritage, and stunning architecture1",
+                    "price": "$6200 per person",
+                    "Days": "9 Days 8 Nights"
+                },
+                {
+                    "name": "Graz",
+                    "imageUrl": "https://images.pexels.com/photos/13633067/pexels-photo-13633067.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": " The capital of Styria, famous for its medieval old town and vibrant cultural scene",
+                    "price": "$5400 per person",
+                    "Days": "7 Days 6 Nights"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "temples",
+            "cities": [
+                {
+                    "name": "Taj Mahal, India",
+                    "imageUrl": "https://images.pexels.com/photos/1583339/pexels-photo-1583339.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": "A UNESCO World Heritage site and the largest religious monument in the world.",
+                    "price": "$6200 per person",
+                    "Days": "4 Days 3 Nights"
+                },
+                {
+                    "id": 1,
+                    "name": "Angkor Wat, Cambodia",
+                    "imageUrl": "https://images.pexels.com/photos/1534057/pexels-photo-1534057.jpeg?auto=compress&cs=tinysrgb&w=600",
+                    "description": "A UNESCO World Heritage site and the largest religious monument in the world.",
+                    "price": "$6200 per person",
+                    "Days": "6 Days 5 Nights"
+                }
+            ]
+        },
+         {
+            "id": 4,
+            "name": "beaches",
+            "cities": [
+          {
+            "id": 1,
+            "name": "Bora Bora, French Polynesia",
+            "imageUrl": "https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows.",
+            "price": "$6200 per person",
+            "Days": "4 Days 4 Nights"
+        },
+        {
+            "id": 2,
+            "name": "Copacabana Beach, Brazil",
+            "imageUrl": "https://images.pexels.com/photos/457878/pexels-photo-457878.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views.",
+            "price": "$6600 per person",
+            "Days": "5 Days 4 Nights"
+        }
+            ]
+        }
+
+    ]
+}
