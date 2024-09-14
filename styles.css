@@ -142,29 +142,7 @@ input:focus {
   opacity: 0.7;
 }
 
-.icons{
-  display: flex;
-  flex-direction: column;
-  margin-left: 2rem;
-  margin-top: 2rem;
-  gap: 1rem;
-}
-
-.icons i{
-  color: var(--button);
-  display: inline;
-}
-
-.icons i:hover{
-  color: var(--style1);
-  transform: scale(1.2);
-  transition: all 100ms;
-}
-
-
-
-
-/*Main  text */
+                                              /*Main  text */
 
 .text {
   text-align: left;
@@ -173,6 +151,7 @@ input:focus {
   position: relative;
   color: var(--main);
   left: 4rem;
+  top: 5rem;
 }
 
 .text h1 {
@@ -185,10 +164,12 @@ input:focus {
 }
 
 .text h3 {
-  font-size: 1.2rem;
-  color: var(--button);
-  text-shadow: 1px 1px #0f1115;
-  font-family: monospace;
+  font-size: 1.3em;
+  font-weight: 400;
+  color: var(--style1);
+  text-shadow: 1px 1px 1px rgba(14, 20, 30, 0.4);
+  opacity: 1;
+  font-family: var(--font1);
 }
 
 .text button {
@@ -210,7 +191,9 @@ input:focus {
   color: var(--main);
 }
 
-/* Booking Form */
+
+                                    /* Booking Form */
+
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
@@ -232,7 +215,6 @@ input:focus {
   position: relative;
   bottom: 5rem;
   right: 7rem;
-  padding: 1rem;
 }
 
 .input {
@@ -254,66 +236,102 @@ form button:hover {
   background-color: var(--style2);
 }
 
-/* photo gallery */
 
-/* City Card Styles */
+                                              /* photo gallery */
 
-.overlay-container {
-  position: fixed;
-  top: 3.6rem;
-  left: 0;
-  width: 100vw;
+
+#results {
+  width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
-  z-index: 9999;
-  display: flex; /* Allow multiple items to wrap */
-  justify-content: center;
-  align-items: flex-start; /* Align items to the top */
-  overflow-y: auto; /* Enable vertical scrolling if needed */
+  background: radial-gradient(#5a72a0, #e2efff, #83b4ff);
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.content {
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  margin: 1rem; /* Add margin between items */
-  position: relative; /* Change to relative */
-  width: calc(33.33% - 2rem); /* Adjust width for three items per row */
-  max-width: 300px; /* Optional: Set a max width */
-}
-
-.overlay-container p, .overlay-container h3 {
-  text-align: center;
-  font-family: var(--font1);
-}
-
-.bookingFormButton {
+#results img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding: 1rem;
   border-radius: 0.3rem;
-  height: 2.25rem;
-  cursor: pointer;
-  background-color: var(--style1);
-  border: none;
-  color: var(--main);
-  padding: 0 1rem;
-  position: relative;
-  bottom: 1rem;
-  font-weight: 400;
-  right: 1rem;
+  box-sizing: border-box;
+}
+
+
+#results img:hover {
+  transform: scale(1.03);
+  transition: all 500ms;
+}
+
+#results button{
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--style1);
+  color: var(--button);
+  box-sizing: border-box;
+  padding: 0.3rem;
   float: right;
 }
 
-.bookingFormButton:hover{
+#results button:hover{
+  background-color: #83b4ff;
+  cursor: pointer;
+  color: #1a2130;
+}
+
+#results span{
+  position: relative;
+  bottom: 17rem;
+  left: 70rem;
+  cursor: pointer;
+  color: var(--style2);
+}
+
+#results div figcaption, #results div p{
+  padding-left: 1rem;
+  line-height: 1.4rem;
+  margin-bottom: -1rem;
+}
+
+
+.blur {
   background-color: var(--style2);
+  background-blend-mode: lighten;
+  z-index: 3;
 }
 
-.overlay-container img {
-  margin: 0;
-  max-width: 100%; /* Ensure images fit within the container */
-  height: auto; /* Maintain aspect ratio */
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 12rem;
+  margin-top: 4rem;
+  margin-left: 1rem;
+}
+
+.Aicons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons .fa {
+  cursor: pointer;
+  color: var(--button);
+}
+
+.icons .fa:hover {
+  transform: rotate(10deg) scale(1.2);
 }
 
 
-/* Contact Text */
+
+                                       /* Contact Text */
+
+
 
 .contact {
   width: 100%;
@@ -387,7 +405,8 @@ form label {
   margin-top: 3rem;
 }
 
-/* About us */
+                                                 /* About us */
+
 
 .abMain {
   display: grid;
@@ -395,23 +414,22 @@ form label {
   overflow: hidden;
 }
 
-.about h1 {
+.about h1{
   margin-bottom: 2rem;
 }
 
-.about > p {
+.about > p{
   background-color: rgba(0, 0, 0, 0.4);
   color: var(--style1);
   padding: 1rem;
 }
 
-.team h1 {
-  font-size: 3rem;
-  color: var(--style1);
+.team h1{
+   font-size: 3rem;
+   color: var(--style1);
 }
 
-.team,
-.team2 {
+.team, .team2 {
   display: flex;
   flex-direction: row;
   color: var(--style1);
@@ -424,9 +442,12 @@ form label {
   justify-content: space-around;
 }
 
-.abMain aside {
-  margin: 5rem 2rem 0 0;
-}
+   .abMain aside{
+    margin: 5rem 2rem 0 0;
+   } 
+
+
+
 
 /* Animations */
 
